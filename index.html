@@ -111,7 +111,9 @@
       <!-- Navbar End -->
 
       <!-- Banner Start -->
-      <section class="carousel w-full h-[600px] rounded-xl">
+      <section
+        class="carousel w-96 md:w-full mx-5 h-60 md:h-[600px] rounded-xl"
+      >
         <!-- First Page -->
         <div
           id="slide1"
@@ -124,11 +126,11 @@
             >
               <a href="#slide4" class="btn btn-circle">❮</a>
               <div class="text-white">
-                <h1 class="text-7xl font-extrabold">
+                <h1 class="text-2xl md:text-7xl font-extrabold">
                   Exotic tastes at your <br />
                   doorstep
                 </h1>
-                <p class="text-xl font-medium mt-6 mb-8">
+                <p class="text-sm md:text-xl font-medium mt-6 mb-8">
                   We supply highly quality organic products
                 </p>
                 <button class="btn gb-main-bg">Shop Now</button>
@@ -213,6 +215,33 @@
           </div>
         </div>
       </section>
+      <!-- Bonus -->
+      <div
+        class="hidden lg:flex justify-between bg-white max-w-5xl py-12 px-16 relative -top-32 -right-44 shadow-lg"
+      >
+        <div class="text-center">
+          <img src="./images/fruit1.png" alt="Fruit image" />
+          <p class="">Grapes</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit2.png" alt="Fruit image" />
+          <p>Orange</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit3.png" alt="Fruit image" />
+          <p>Mango</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit4.png" alt="Fruit image" />
+          <p>Strawberry</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit5.png" alt="Fruit image" />
+          <p>Bedana fruit</p>
+        </div>
+      </div>
+      <!-- Bonus End -->
+
       <!-- Banner End -->
     </header>
     <main class="md:container mx-auto md:px-16 lg:px-24">
@@ -222,11 +251,11 @@
         <div
           class="flex flex-col text-center lg:text-start lg:flex-row justify-between mb-16"
         >
-          <div class="flex-1">
-            <h3 class="text-5xl font-extrabold text-prime-txt mb-6">
+          <div class="flex-1 px-3">
+            <h3 class="text-3xl md:text-5xl font-extrabold text-prime-txt mb-6">
               Deal of the day
             </h3>
-            <p class="font-medium leading-7">
+            <p class="font-medium text-sm md:text-base leading-7">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical Latin literature from 45 BC, making
               it over 2000 years old.
@@ -540,14 +569,16 @@
       <!-- Deal of the day END -->
 
       <!-- Meet The Team Section -->
-      <section class="my-24">
+      <section class="my-24 mx-4">
         <div
-          class="hero hero-overlay bg-opacity-60 text-center p-32 rounded-xl"
+          class="hero hero-overlay bg-opacity-60 text-center p-16 md:p-32 rounded-xl"
           style="background-image: url(./images/banner1.png)"
         >
           <div class="text-white">
-            <h2 class="mb-6 text-5xl font-extrabold">Meet the team section</h2>
-            <p class="mb-12 font-medium">
+            <h2 class="mb-6 text-2xl md:text-5xl font-extrabold">
+              Meet the team section
+            </h2>
+            <p class="mb-12 text-sm md:text-base font-medium">
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical <br />
               Latin literature from 45 BC, making it over 2000 years old.
@@ -622,6 +653,7 @@
       </section>
       <!-- Meet The Team Section END-->
     </main>
+    <!-- Footer -->
     <footer
       class="footer footer-center py-12 md:py-24 bg-prime-txt text-base-content rounded text-white"
     >
@@ -629,7 +661,7 @@
         <img src="./images/logo.png" alt="Logo" />
         <h2 class="text-4xl font-bold">Fruit Burst</h2>
       </div>
-      <div class="grid grid-cols-3 md:grid-flow-col gap-4">
+      <div class="grid grid-flow-col gap-4">
         <a class="link link-hover">Home</a>
         <a class="link link-hover">About us</a>
         <a class="link link-hover">Shop</a>
@@ -683,5 +715,6 @@
         </p>
       </div>
     </footer>
+    <!-- Footer End -->
   </body>
 </html>
