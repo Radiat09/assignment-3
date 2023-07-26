@@ -46,7 +46,7 @@
     <title>Fruit Burst</title>
   </head>
   <body class="font-lato">
-    <header class="container mx-auto px-8 md:px-16 lg:px-24">
+    <header class="container ml-12 md:mx-auto md:px-16 lg:px-24">
       <!-- Navbar Start -->
       <nav
         class="navbar flex justify-between lg:bg-main-bg lg:rounded-full mb-14 lg:px-14 lg:py-7 mt-12 text-prime-txt lg:text-white"
@@ -215,7 +215,322 @@
       </section>
       <!-- Banner End -->
     </header>
-    <main></main>
+    <main class="md:container ml-14 md:mx-auto md:px-16 lg:px-24">
+      <!-- Deal of the Day Section -->
+      <section class="my-24">
+        <!-- section header -->
+        <div
+          class="flex flex-col text-center lg:flex-row justify-between mb-16"
+        >
+          <div class="flex-1">
+            <h3 class="text-5xl font-extrabold text-prime-txt mb-6">
+              Deal of the day
+            </h3>
+            <p class="font-medium leading-7">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div
+            class="grid grid-flow-col gap-5 text-center auto-cols-max items-center flex-1 justify-center lg::justify-end"
+          >
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 29"></span>:
+              </span>
+              <p>days</p>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15"></span>:
+              </span>
+              <p>hours</p>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 25"></span>:
+              </span>
+              <p>min</p>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 8"></span>
+              </span>
+              <p>sec</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card Div -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- first Card -->
+          <div class="card shadow-lg">
+            <div
+              class="px-10 pt-10 flex flex-col gap-12 justify-center items-center"
+            >
+              <img
+                src="./images/fruit6.png"
+                alt="Shoes"
+                class="rounded-xl w-2/5"
+              />
+              <h4 class="text-2xl font-bold text-prime-txt">12.90$ - 18.85$</h4>
+            </div>
+            <div class="divider w-1/2 relative left-1/4"></div>
+            <div class="card-body items-center text-center">
+              <p class="font-medium mb-6">Apple</p>
+              <img
+                src="./images/Group-24.svg"
+                alt="2 star rating"
+                class="mb-8"
+              />
+              <!-- Modal -->
+              <div class="card-action">
+                <a
+                  class="cursor-pointer text-main-bg"
+                  onclick="my_modal_1.showModal()"
+                >
+                  Details
+                </a>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col text-center items-center px-12 pt-12"
+                    >
+                      <img src="./images/fruit6.png" alt="" class="w-3/5" />
+                      <h3 class="font-extrabold text-4xl mb-6 mt-6">Apples</h3>
+                      <p class="py-4 mb-8">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <img
+                        src="./images/Group-24.svg"
+                        alt="2 star rating"
+                        class="mb-7"
+                      />
+                    </div>
+                    <div
+                      class="modal-action flex gap-8 justify-center items-center"
+                    >
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn font-extrabold border-red-300 outline-none text-main-bg bg-white"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="btn font-extrabold bg-main-bg hover:text-main-bg text-white"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card -->
+          <div class="card shadow-lg">
+            <div
+              class="px-10 pt-10 flex flex-col gap-12 justify-center items-center"
+            >
+              <img
+                src="./images/fruit7.png"
+                alt="Shoes"
+                class="rounded-xl w-2/5"
+              />
+              <h4 class="text-2xl font-bold text-prime-txt">12.90$ - 18.85$</h4>
+            </div>
+            <div class="divider w-1/2 relative left-1/4"></div>
+            <div class="card-body items-center text-center">
+              <p class="font-medium mb-6">Orange</p>
+              <img
+                src="./images/Group-24.svg"
+                alt="2 star rating"
+                class="mb-8"
+              />
+              <!-- Modal -->
+              <div class="card-action">
+                <a
+                  class="cursor-pointer text-main-bg"
+                  onclick="my_modal_2.showModal()"
+                >
+                  Details
+                </a>
+                <dialog id="my_modal_2" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col text-center items-center px-12 pt-12"
+                    >
+                      <img src="./images/fruit7.png" alt="" class="w-3/5" />
+                      <h3 class="font-extrabold text-4xl mb-6 mt-6">Orange</h3>
+                      <p class="py-4 mb-8">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <img
+                        src="./images/Group-24.svg"
+                        alt="2 star rating"
+                        class="mb-7"
+                      />
+                    </div>
+                    <div
+                      class="modal-action flex gap-8 justify-center items-center"
+                    >
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn font-extrabold border-red-300 outline-none text-main-bg bg-white"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="btn font-extrabold bg-main-bg hover:text-main-bg text-white"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card -->
+          <div class="card shadow-lg">
+            <div
+              class="px-10 pt-10 flex flex-col gap-12 justify-center items-center"
+            >
+              <img
+                src="./images/fruit8.png"
+                alt="Shoes"
+                class="rounded-xl w-2/5"
+              />
+              <h4 class="text-2xl font-bold text-prime-txt">12.90$ - 18.85$</h4>
+            </div>
+            <div class="divider w-1/2 relative left-1/4"></div>
+            <div class="card-body items-center text-center">
+              <p class="font-medium mb-6">Red Dragon</p>
+              <img
+                src="./images/Group-24.svg"
+                alt="2 star rating"
+                class="mb-8"
+              />
+              <!-- Modal -->
+              <div class="card-action">
+                <a
+                  class="cursor-pointer text-main-bg"
+                  onclick="my_modal_3.showModal()"
+                >
+                  Details
+                </a>
+                <dialog id="my_modal_3" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col text-center items-center px-12 pt-12"
+                    >
+                      <img src="./images/fruit8.png" alt="" class="w-3/5" />
+                      <h3 class="font-extrabold text-4xl mb-6 mt-6">
+                        Red Dragon
+                      </h3>
+                      <p class="py-4 mb-8">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <img
+                        src="./images/Group-24.svg"
+                        alt="2 star rating"
+                        class="mb-7"
+                      />
+                    </div>
+                    <div
+                      class="modal-action flex gap-8 justify-center items-center"
+                    >
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn font-extrabold border-red-300 outline-none text-main-bg bg-white"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="btn font-extrabold bg-main-bg hover:text-main-bg text-white"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Card -->
+          <div class="card shadow-lg">
+            <div
+              class="px-10 pt-10 flex flex-col gap-12 justify-center items-center"
+            >
+              <img
+                src="./images/fruit9.png"
+                alt="Shoes"
+                class="rounded-xl w-2/5"
+              />
+              <h4 class="text-2xl font-bold text-prime-txt">12.90$ - 18.85$</h4>
+            </div>
+            <div class="divider w-1/2 relative left-1/4"></div>
+            <div class="card-body items-center text-center">
+              <p class="font-medium mb-6">Banana</p>
+              <img
+                src="./images/Group-24.svg"
+                alt="2 star rating"
+                class="mb-8"
+              />
+              <!-- Modal -->
+              <div class="card-action">
+                <a
+                  class="cursor-pointer text-main-bg"
+                  onclick="my_modal_4.showModal()"
+                >
+                  Details
+                </a>
+                <dialog id="my_modal_4" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <div
+                      class="flex flex-col text-center items-center px-12 pt-12"
+                    >
+                      <img src="./images/fruit9.png" alt="" class="w-3/5" />
+                      <h3 class="font-extrabold text-4xl mb-6 mt-6">Banana</h3>
+                      <p class="py-4 mb-8">
+                        Professional employees are there for you to pick the
+                        most amazing and fresh fruits.
+                      </p>
+                      <img
+                        src="./images/Group-24.svg"
+                        alt="2 star rating"
+                        class="mb-7"
+                      />
+                    </div>
+                    <div
+                      class="modal-action flex gap-8 justify-center items-center"
+                    >
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button
+                        class="btn font-extrabold border-red-300 outline-none text-main-bg bg-white"
+                      >
+                        Close
+                      </button>
+                      <button
+                        class="btn font-extrabold bg-main-bg hover:text-main-bg text-white"
+                      >
+                        Buy Now
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
